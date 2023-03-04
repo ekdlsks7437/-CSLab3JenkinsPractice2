@@ -16,6 +16,7 @@ public class Main {
             int num2 = Integer.parseInt(tokens[2]);
             
             int result;
+            String results;
             if (operation.equals("add")) {
                 result = myCalculator.add(num1, num2);
             } else if (operation.equals("subtract")) {
@@ -27,15 +28,20 @@ public class Main {
             } else if (operation.equals("fibonacci")) {
                 result = myCalculator.fibonacciNumberFinder(num1);
             } else if (operation.equals("binary")) {
-                result = myCalculator.intToBinaryNumber(num1);
+                results = myCalculator.intToBinaryNumber(num1);
             } else if (tokens[0].equals("quit")) {
                 break;
             } else {
                 System.out.println("Invalid operation!");
                 return;
             }
+
+            if (operation.equals("binary")) {
+                System.out.println("Result: " + results);
+            } else {
+                System.out.println("Result: " + result);
+            }
             
-            System.out.println("Result: " + result);
         }
     }
 }
