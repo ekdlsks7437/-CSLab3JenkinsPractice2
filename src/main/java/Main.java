@@ -12,11 +12,13 @@ public class Main {
             
             String[] tokens = input.split(" "); // split the input by spaces
             String operation = tokens[0];
-            if (tokens.size() > 2) {
-                int num1 = Integer.parseInt(tokens[1]);
-                int num2 = Integer.parseInt(tokens[2]);
+            int num1 = 0;
+            int num2 = 0;
+            if (tokens.length > 2) {
+                num1 = Integer.parseInt(tokens[1]);
+                num2 = Integer.parseInt(tokens[2]);
             } else {
-                int num1 = Integer.parseInt(tokens[1]);
+                num1 = Integer.parseInt(tokens[1]);
             }
             
             
