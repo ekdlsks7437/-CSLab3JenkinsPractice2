@@ -15,8 +15,8 @@ public class Main {
             int num1 = Integer.parseInt(tokens[1]);
             int num2 = Integer.parseInt(tokens[2]);
             
-            int result;
-            String results;
+            int result = 0;
+            String results = "";
             if (operation.equals("add")) {
                 result = myCalculator.add(num1, num2);
             } else if (operation.equals("subtract")) {
